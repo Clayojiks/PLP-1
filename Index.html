@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Free web tutorials">
+    <meta name="keywords" content="HTML5">
+    <meta name="author" content="Clay Ojijo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <header>
+      <a href="https://google.com">A Click to Google.</a>
+ 
+    <h2>User Registration Details.</h2>
+    <p>Your personal details is safe with us for transparency and integrity of your data.<br>
+      Fill the form below with your correct details and submit.
+    </p>
+
+    <form action="/submit-form" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="@gmail.com"><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="country">Country:</label>
+      <select name="country" id="country">
+        <option name="nigeria">Nigeria</option>
+        <option name="kenya">Kenya</option>
+        <option name="uganda">Uganda</option>
+        <option name="ethiopia">Ethiopia</option>
+      </select><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+      <p>If you click the "Submit" button, the form-data will be sent to a page called
+        "/submit-form".</p>
+        <p>Below is a table with your full detais after submitting your form, If not your correct details ignore.</p>
+        <h3>A table with your full details, you can print it for invoice.</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Occupation</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark Maina</td>
+              <td>markmaina@gmail.com</td>
+              <td>Uganda</td>
+              <td>Artist</td>
+              <td>25yrs</td>
+            </tr>
+            <tr>
+              <td>Emeka Annabel</td>
+              <td>annabel21@gmail.com</td>
+              <td>Nigeria</td>
+              <td>Hairdresser</td>
+              <td>22yrs</td>
+
+            </tr>
+            <tr>
+              <td>Tom Sadik</td>
+              <td>sadiktom@gmail.com</td>
+              <td>Ethiopia</td>
+              <td>Journalist</td>
+              <td>35yrs</td>
+            </tr>
+
+            <td>Miriam Leo</td>
+            <td>miriamleo@gmail.com</td>
+            <td>Kenya</td>
+            <td>Software Engineer</td>
+            <td>27yrs</td>
+          </tbody>
+        </table>
+        
+<p>Insert a group image to identify your not a robot.</p>       
+<img class="image" src="image group1.jpeg" alt="Group photo.">
+  </header>
+</body>
+</html>
