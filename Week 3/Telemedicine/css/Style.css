@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.navbar .hamburger {
+  cursor: pointer;
+  display: block;
+}
+
+p{
+  font-family: Georgia;
+  font-size: 25px;
+}
+
+
+header{
+  color: mediumaquamarine;
+  text-align: center;
+  font-weight: bold;
+
+}
+.container{
+  background-color: plum;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 7px;
+}
+body{
+  background-color: palevioletred;
+}
+
+.box{
+  flex: 1 1 30%;
+  color: aliceblue;
+  font-size: 30px;
+  transition: background-color 0.3s;
+  min-width: 200px;
+}
+
+.box:hover{
+  background-color: purple;
+}
+
+.side bar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side bar.active ul {
+  display: flex; 
+}
+
+li a {
+  display: inline;
+  color: rgba(7, 19, 234, 0.815);
+ 
+  
+}
+
+li a:hover{
+  background-color: black;
+  color: white;
+}
+
+li a.active{
+  background-color: purple;
+  color: white;
+}
+
+.main-content{
+  margin-right: 0;
+  margin-bottom: 20px;
+
+}
+.main-content {
+  flex: 3;
+  margin-left: 20px;
+}
+
+.content{
+  justify-content: space-between;
+  align-items: center; 
+  height: 100%;
+  background-color: lightgray;
+  margin-right: 0;
+  margin-bottom: 20px;
+
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+  .main-content{
+    flex-direction: column;
+  }
+
+.side bar{
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 15px;
+  align-items: left;
+
+}
+@media (min-width: 768px){
+  .side bar ul{
+     flex: 1 1 30%;
+  }
+}
+
+/* small screen < 768px  */
+@media (max-width: 768px){
+  .side bar ul{
+     flex: 1 1 45%;
+  }
+}
+
+/* smaller screen < 480px  */
+@media (max-width: 480px){
+  .side bar ul{
+     flex: 1 1 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
